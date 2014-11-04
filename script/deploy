@@ -5,6 +5,6 @@ ssh app@test-app <<EOF
   git pull
   npm install --production
   forever stopall
-  forever startall
+  forever start app.js
   exit
 EOF
